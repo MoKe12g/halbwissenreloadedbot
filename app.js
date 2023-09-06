@@ -9,12 +9,10 @@ const ChiaProcessor = require('./src/processors/ChiaProcessor');
 const ChiaImageProcessor = require('./src/processors/ChiaImageProcessor');
 const MemberCountProcessor = require('./src/processors/MemberCountProcessor');
 const GhwKarteProcessor = require('./src/processors/GhwKarteProcessor');
-const RssNotificationProcessor = require('./src/processors/RssNotificationProcessor');
 const AnswerProcessor = require('./src/processors/AnswerProcessor');
 const ExpelliarmusProcessor = require('./src/processors/ExpelliarmusProcessor');
 const RandomMessageProcessor = require('./src/processors/RandomMessageProcessor');
 const TiradeProcessor = require('./src/processors/TiradeProcessor');
-const YoutubeFeedProcessor = require('./src/processors/YoutubeFeedProcessor');
 
 const GhwKarte = require('./src/services/GhwKarte');
 
@@ -90,12 +88,10 @@ const addProcessors = () => {
     // new ChiaImageProcessor(bot);
     new MemberCountProcessor(bot);
     new GhwKarteProcessor(bot);
-    new RssNotificationProcessor(bot);
     new AnswerProcessor(bot);
     new ExpelliarmusProcessor(bot);
     new RandomMessageProcessor(bot);
     new TiradeProcessor(bot);
-    new YoutubeFeedProcessor(bot);
 
     resolve();
   });
