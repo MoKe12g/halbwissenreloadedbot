@@ -1,6 +1,6 @@
 const Processor = require('./Processor');
 const CronJob = require('cron').CronJob;
-const fetch = require('node-fetch');
+const fetch = import('node-fetch');
 
 class YoutubeFeedProcessor extends Processor {
 

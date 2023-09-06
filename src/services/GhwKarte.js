@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = import('node-fetch');
 const GhwKarteEntry = require('../model/GhwKarteEntry');
 
 class GhwKarte {
