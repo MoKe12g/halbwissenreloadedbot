@@ -12,7 +12,6 @@ const GhwKarteProcessor = require('./src/processors/GhwKarteProcessor');
 const AnswerProcessor = require('./src/processors/AnswerProcessor');
 const ExpelliarmusProcessor = require('./src/processors/ExpelliarmusProcessor');
 const RandomMessageProcessor = require('./src/processors/RandomMessageProcessor');
-const TiradeProcessor = require('./src/processors/TiradeProcessor');
 
 const GhwKarte = require('./src/services/GhwKarte');
 
@@ -91,7 +90,6 @@ const addProcessors = () => {
     new AnswerProcessor(bot);
     new ExpelliarmusProcessor(bot);
     new RandomMessageProcessor(bot);
-    new TiradeProcessor(bot);
 
     resolve();
   });
